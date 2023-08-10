@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #070a0b;
+    position: relative;
+    display: flex;
+}
+
+#nav {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    color: #fbfbfb;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+
+#navr {
+    display: flex;
+    font-size: 20px;
+    font-family: gilroy;
+    margin-left: 30px;
+}
+
+#navr i {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#nav #center {
+    display: flex;
+    gap: 50px;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: gilroy;
+    left: 25%;
+    position: absolute;
+}
+#nav #center h3:hover{
+    cursor: pointer;
+    color: rgb(186, 11, 11);
+}
+
+#page1 #button button {
+    color: rgb(248, 249, 251);
+    background: linear-gradient(rgba(255, 255, 0, 0.663), rgba(0, 128, 0, 0.734));
+    font-family: gilroy;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-right: 154px;
+}
+#page1 #button button:hover{
+    cursor: pointer;
+    padding:  10px 15px;
+
+}
+
+#page1 h1 {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    color: white;
+    font-size: 160px;
+    font-family: Druk cond cy;
+    line-height: 0.9;
+
+}
+
+#page1 h1 span {
+    background-image: linear-gradient(178.45deg, #558bad 32%, rgba(106, 170, 209, 0) 47%, #be78bf 65%, rgba(118, 76, 119, 0) 84.99%), linear-gradient(180deg, #fbfbfb, #fbfbfb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#page1 h4 {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: gilroy;
+    color: white;
+}
+
+#page1>button {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    font-size: 29px;
+    font-weight: 500;
+    font-family: gilroy;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 0, 0.57), rgba(0, 128, 0, 0.614));
+    padding: 0 20px;
+    border-radius: 10px;
+}
+#page1>button:hover{
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+#page1 #right {
+    width: 65%;
+    height: 100%;
+}
+
+#page1 #left {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#lcards {
+    overflow: auto;
+    display: table-column;
+    gap: 20px;
+    width: 220px;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    right: -12%;
+
+    animation: animal 5s infinite;;
+}
+
+.card img {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 18%;
+    right: 25%;
+}
+
+.card {
+    width: 180px;
+    height: 190px;
+    background-color: transparent;
+    top: 30;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.586);
+    position: relative;
+}
+
+@keyframes animal {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 0;
+    }
+
+}
+
+#ccard {
+    overflow: auto;
+    display: table-column;
+    gap: 20px;
+    width: 220px;
+    height: 100%;
+    color: #fbfbfb;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+
+    animation: animac  5s infinite;;
+}
+
+@keyframes animac {
+    0% {
+        top: -50%;
+    }
+
+    50% {
+        top: 20%;
+    }
+
+    100% {
+        top: 15%;
+    }
+}
+
+#rcard {
+    overflow: auto;
+    display: table-column;
+    gap: 20px;
+    width: 220px;
+    height: 100%;
+    color: #fbfbfb;
+    position: absolute;
+    top: -2%;
+    right: 52%;
+
+    animation: animar 5s infinite;;
+}
+
+@keyframes animar {
+    0% {
+        top: 40%;
+    }
+
+    50% {
+        top: 30%;
+
+    }
+
+    100% {
+        top: -2;
+    }
+}
+
+#page2 {
+    width: 100%;
+   height: 150vh;
+    background-color: #070a0b;
+    position: relative;
+    overflow: hidden;
+}
+
+#page2 #nav {
+    overflow:visible;
+    height: 70px;
+   margin: 0;
+    background-color: linear-gradient(rgba(255, 255, 0, 0.629), rgba(255, 192, 203, 0.656));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+
+    animation: aninav 5s infinite;
+}
+
+@keyframes aninav {
+    0% {
+        right: 0;
+    }
+
+    30% {
+        right: 20%;
+    }
+
+    50% {
+        right: 40%;
+    }
+
+    70% {
+        right: 60%;
+    }
+
+    80% {
+        right: 80%;
+    }
+
+    100%{
+        right: 100%;
+    }
+}
+
+#nav h3 {
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+
+#nav i {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#page2 h1 {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 500;
+    font-family: Druk Cond Cy;
+    color: white;
+    top: 18%;
+    left: 10%;
+    line-height: 1;
+}
+
+#page2 h1 span {
+    background: linear-gradient(blue, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#page2 p {
+    width: 35%;
+    position: absolute;
+    color: #fbfbfb;
+    font-size: 24px;
+    font-family: gilroy;
+    top: 30%;
+    right: 10%;
+    z-index: 99;
+}
+
+#page2 #one1 #one {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 10%;
+}
+#page2 #one1 p{
+    font-size: 20px;
+    width: 25%;
+    top: 98%;
+    left: 10%;
+    font-family: helvetica Neue;
+}
+#page2 #two2 #two {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 40%;
+}
+#page2 #two2 p{
+    font-size: 20px;
+    width: 25%;
+    top: 96%;
+    left: 40%;
+    font-family: helvetica Neue;
+}
+
+#page2 #three3 #three {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 70%;
+}
+#page2 #three3 p{
+    font-size: 20px;
+    width: 25%;
+    top: 98%;
+    left: 72.5%;
+    font-family: helvetica Neue;
+}
+
+#page2 #one1 h4 {
+    bottom: 3%;
+    left: 16%;
+    position: absolute;
+    font-size: 25px;
+    color: #fbfbfb;
+    font-family: gilroy;
+
+}
+
+#page2 #two2 h4 {
+    bottom: 5%;
+    left: 44%;
+    position: absolute;
+    font-size: 25px;
+    color: #fbfbfb;
+    font-family: gilroy;
+}
+
+#page2 #three3 h4 {
+    bottom: 3%;
+    right: 12%;
+    position: absolute;
+    font-size: 25px;
+    color: #fbfbfb;
+    font-family: gilroy;
+}
+#vacant{
+    width: 100%;
+    height: 40vh;
+    background-color: #070a0b;
+
+}
+#page3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #070a0b;
+    position: relative;
+    overflow: hidden;
+}
+
+#vacant h1 {
+    position: absolute;
+    left: 14%;
+    font-size: 240px;
+    font-weight: 500;
+    font-family: Druk Cond cy;
+    color: #fbfbfb;
+    margin-top: 50px;
+    
+}
+
+#page3 #BOX1  {
+    position: absolute;
+   width: 30%;
+   height: 40%;
+   background-color: transparent;
+   top: 10%;
+   right: 10%;
+   text-align:left;
+   justify-content: center;
+   opacity: 0.5;
+}
+#page3 #BOX1:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#page3 #BOX1 h2{
+    color: whitesmoke;
+    line-height: 1;
+    font-size: 50px;
+    font-family: helvetica Neue;
+
+}
+#page3  #BOX1 p {
+    position: absolute;
+   width: 80%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: helvetica Neue italic;
+    color: #fbfbfb;
+}
+#page3 #BOX2 {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 50%;
+    right: 10%;
+    background-color: transparent;
+    text-align: left;
+    justify-content: center;
+    opacity: 0.5;
+}
+#page3 #BOX2:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#page3 h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fbfbfb;
+    font-family: helvetica Neue;
+}
+#page3 #BOX2 p{
+    width: 80%;
+     font-size: 25px;
+     font-weight: 500;
+     font-family: helvetica Neue italic;
+     color: #fbfbfb;
+ }
+#page3 video {
+    position: absolute;
+    top: 20%;
+}
+#page6 #navlast{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: transparent;
+    display: flex;
+   margin-bottom: 20px;
+   opacity: 0.8;
+}
+#navlast>h1{
+    font-size: 50px;
+    font-family: voyage;
+    font-weight: 600;
+   margin-left: 20px;
+   margin-bottom: 10px;
+  color: #fbfbfb;
+}
+#navlast #intro{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    
+    border-left: 5px solid white;
+    border-radius: 1px;
+} 
+#intro #text1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#intro #text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navlast h4{
+    color: #fbfbfb;
+    font-size: 35px;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#navlast #intro i{
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+#vacant2{
+    width: 100%;
+    background-color: #070a0b;
+    color: white;
+    display: flex;
+    gap: 80px;
+    position: relative;
+   padding: 30px;
+overflow: hidden;
+
+    
+}
+#vacant2 h1{
+ font-size: 170px;
+ font-weight: 600;
+ font-family: Druk Cond cy;
+ position: relative;
+ animation: vacanth  5s infinite;;
+}
+@keyframes vacanth{
+    0% {
+        right: 0;
+    }
+
+    30% {
+        right: 20%;
+    }
+
+    50% {
+        right: 40%;
+    }
+
+    70% {
+        right: 60%;
+    }
+
+    80% {
+        right: 80%;
+    }
+
+    100%{
+        right: 100%;
+    }
+}
+
+#page4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #070a0b;
+    position: relative;
+
+    
+}
+#page4 img{
+position: absolute;
+width: 45%;
+top: 5%;
+}
+#page4 #right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    right: 0%;
+    color: #fbfbfb;
+}
+#right #up  {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}  
+#up h5{
+    opacity: 0.6;
+    font-family: helvetica Neue ;
+    margin-bottom: 10px;
+}  
+#up h1{
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: helvetica Neue ;
+}
+#up i{
+    position: absolute;
+    left: -25%;
+    top: 15%;
+    font-size: 30px;
+    color: rgb(186, 11, 11);
+}
+
+#up h1:hover{
+    cursor: pointer;
+    color: red;
+}
+#right #down{
+position: absolute;
+ top: 55%;
+ left: 30%;
+ color: #fbfbfb;
+}
+#down #top {
+    display: flex;
+}
+#down #top i{
+    font-size: 35px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#down #top h2{
+    font-size: 40px;
+    font-family: gilroy;
+
+}
+#down p{
+    width: 90%;
+   font-size: 25px;
+}
+#page5{
+    width: 100%;
+    height: 100%;
+    background-color: #070a0b;
+    display: flex;
+    
+}
+#page5 #right{
+    width: 45%;
+    height: 100%;
+    color: #fbfbfb;
+    position: relative;
+    font-family: helvetica neue;
+}
+#page5 #right h1{
+    font-size: 60px;
+    font-family: Agrandir Tight Black ;
+    font-weight: 1000;
+  position: absolute;
+  margin-top: 50PX;
+  left: 10%;
+}
+#right h1 span{
+    background: linear-gradient(#558bad 32%, rgba(106, 170, 209, 0) 47%, #be78bf 65%, rgba(118, 76, 119, 0) 84.99%), linear-gradient(180deg, #fbfbfb, #fbfbfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#right #one1 {
+    left: 10%;
+ position: relative;
+ top:30%;
+}
+#right #one1 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#right #one1 p{
+    font-size: 20px;
+}
+#right #two2 {
+    left: 10%;
+ position: relative;
+ top:40%;
+}
+#right #two2 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#right #two2 p{
+    font-size: 20px;
+}
+#right #three3 {
+    left: 10%;
+ position: relative;
+ top:50%;
+}
+#right #three3 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#right #three3 p{
+    font-size: 20px;
+}
+#right #one1 i{
+    position: absolute;
+    left: 2%;
+}
+#left{
+    width: 55%;
+    height: 100%;
+    background-color: transparent;
+ position: relative;
+}
+#left #iphone13{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left:20%;
+                                  
+}
+#page5 #iphone13 img{
+    left: 8%;
+    position: relative;
+ width: 35%;
+ z-index: 999;
+}
+#page5 #iphone13 video{
+    width:34%;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    z-index: 99;
+}
+#page5 #iphone12 img{
+    position: absolute;
+    width: 25%;
+    top: 14%;
+    left: 50%;
+}
+#page6{
+    width: 100%;
+    height: 100vh;
+    background-color: #070a0b;
+    overflow: hidden;
+    position: relative;
+}   
+#page6>h1{
+ font-size: 600px;
+ font-family: Posey textured ;
+ color: rgba(245, 245, 245, 0.399);
+ opacity: 0.2;
+position: absolute;
+top: -12%;
+right: -3%;
+}
+#page6>h2{
+    width: 40%;
+font-size: 40px;
+ font-family: helvetica neue;
+ font-weight: 400;
+ color: white;
+position: absolute;
+top: 20%;
+left: 50%;
+}
+#page6 i{
+color: #fbfbfb;
+position: absolute;
+top: 49%;
+left: 50%;
+font-size: 30px;
+}
+#page6 a{
+text-decoration: none;
+color: red;
+font-family: helvetica neue;
+position: absolute;
+top: 50%;
+left: 53%;
+}
